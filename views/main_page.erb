@@ -1,0 +1,18 @@
+<h1>Fill in a word</h1>
+<form action='/display'>
+    <div class="form-group">
+        <label for="word">Your word</label>
+        <!-- the name is being passed to the called page via the URL "?name=xxx" -->
+        <input id="word" name="input" class="form-control" type="text">
+    </div>
+    <button type="submit" class="btn">Try!</button>
+</form>
+
+<div>
+
+    <h2>score: <%= @param%></h2>
+</div>
+
+<div>
+    <h2>in words: <%= @number_in_words%></h2>
+</div>
