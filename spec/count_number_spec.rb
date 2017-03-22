@@ -15,47 +15,47 @@ require('rspec')
     it("returns words for numbers")do
       expect(1.count_number()).to(eq("one"))
     end
-    it("returns words for numbers")do
-      expect(2.count_number()).to(eq("two"))
-    end
-    it("returns words for numbers")do
-      expect(20.count_number()).to(eq("twenty"))
-    end
-    it("returns words for numbers")do
-      expect(200.count_number()).to(eq("two hundred ")) #space if no remainder after hundredth
-    end
-    it("returns words for numbers")do
-      expect(1000000000.count_number()).to(eq("one billion ")) #space if no remainder after hundredth
-    end
-    it("returns words for numbers")do
-      expect(1000000001.count_number()).to(eq("one billion one")) #space if no remainder after hundredth
-    end
-    it("returns words for numbers")do
-      expect(9999999999.count_number()).to(eq("see result")) #space if no remainder after hundredth
-    end
-    it("returns words for numbers")do
-      expect(8888888888.count_number()).to(eq("see result")) #space if no remainder after hundredth
-    end
-    it("returns words for numbers")do
-      expect(7777777777.count_number()).to(eq("see result")) #space if no remainder after hundredth
-    end
-    it("returns words for numbers")do
-      expect(6666666666.count_number()).to(eq("see result")) #space if no remainder after hundredth
-    end
-    it("returns words for numbers")do
-      expect(5555555555.count_number()).to(eq("see result")) #space if no remainder after hundredth
-    end
-    it("returns words for numbers")do
-      expect(4444444444.count_number()).to(eq("see result")) #space if no remainder after hundredth
-    end
-    it("returns words for numbers")do
-      expect(3333333333.count_number()).to(eq("see result")) #space if no remainder after hundredth
-    end
-    it("returns words for numbers")do
-      expect(2222222222.count_number()).to(eq("see result")) #space if no remainder after hundredth
-    end
-    it("returns words for numbers")do
-      expect(1111111111.count_number()).to(eq("see result")) #space if no remainder after hundredth
-    end
+    # it("returns words for numbers")do
+    #   expect(2.count_number()).to(eq("two"))
+    # end
+    # it("returns words for numbers")do
+    #   expect(20.count_number()).to(eq("twenty"))
+    # end
+    # it("returns words for numbers")do
+    #   expect(200.count_number()).to(eq("two hundred ")) #space if no remainder after hundredth
+    # end
+    # it("returns words for numbers")do
+    #   expect(1000000000.count_number()).to(eq("one billion ")) #space if no remainder after hundredth
+    # end
+    # it("returns words for numbers")do
+    #   expect(1000000001.count_number()).to(eq("one billion one")) #space if no remainder after hundredth
+    # end
+    # it("returns words for numbers")do
+    #   expect(9999999999.count_number()).to(eq("see result")) #space if no remainder after hundredth
+    # end
+    # it("returns words for numbers")do
+    #   expect(8888888888.count_number()).to(eq("see result")) #space if no remainder after hundredth
+    # end
+    # it("returns words for numbers")do
+    #   expect(7777777777.count_number()).to(eq("see result")) #space if no remainder after hundredth
+    # end
+    # it("returns words for numbers")do
+    #   expect(6666666666.count_number()).to(eq("see result")) #space if no remainder after hundredth
+    # end
+    # it("returns words for numbers")do
+    #   expect(5555555555.count_number()).to(eq("see result")) #space if no remainder after hundredth
+    # end
+    # it("returns words for numbers")do
+    #   expect(4444444444.count_number()).to(eq("see result")) #space if no remainder after hundredth
+    # end
+    # it("returns words for numbers")do
+    #   expect(3333333333.count_number()).to(eq("see result")) #space if no remainder after hundredth
+    # end
+    # it("returns words for numbers")do
+    #   expect(2222222222.count_number()).to(eq("see result")) #space if no remainder after hundredth
+    # end
+    # it("returns words for numbers")do
+    #   expect(1111111111.count_number()).to(eq("see result")) #space if no remainder after hundredth
+    # end
 
   end

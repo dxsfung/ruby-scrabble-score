@@ -4,6 +4,7 @@ class Fixnum
     define_method(:count_number) do
         int=self
         numbers_to_name = {
+            1000000000000 => "trillion",
             1000000000 => "billion",
             1000000 => "million",
             1000 => "thousand",
@@ -37,16 +38,16 @@ class Fixnum
             1 => "one"
         }
         str = ""
-        numbers_to_name.each do |num, name|
+        numbers_to_name.each do |num, name| #matching starts from table top (num=1T)
             if int == 0
                 return str
-            elsif int.to_s.length == 1 && int/num > 0       #single digit number within range
+            elsif int.to_s.length == 1 && int/num > 0       #single digit number within range [int/num>0 means last iteration]
                 return str + "#{name}"                      #return matching name
-            elsif int < 100 && int/num > 0                  #dual digit and number within range
-                return str + "#{name}" if int%num == 0      #return matching if multiple of num
-                return str + "#{name} " + (int%num).count_number  #return matching and loop again for remainder
-            elsif int/num > 0                               #3 or more digits and int > num
-                return str + (int/num).count_number + " #{name} " + (int%num).count_number #return highest denomination and recursive call.
+            elsif int < 100 && int/num > 0                  #dual digit and number within range [int/num>0 means last iteration]
+                return str + "#{name}" if int%num == 0      #return matching if multiple of num [int%num=0]
+                return str + "#{name} " + (int%num).count_number  #return matching and loop using the remainder [int%num]
+            elsif int/num > 0                               #start recurrsive loop when int is greater than current num
+                return str + (int/num).count_number + " #{name} " + (int%num).count_number #return highest denomination and recursive call count_number
             end
         end
     end
